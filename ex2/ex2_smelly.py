@@ -5,8 +5,8 @@ class Shape:
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
-    def calculate_area(self, radius):
-        return 3.14 * radius * radius
+    def calculate_area(self):
+        return 3.14 * self.radius * self.radius
     
 class Rectangle(Shape):
     def __init__(self, length, width):

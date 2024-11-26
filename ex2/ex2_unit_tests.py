@@ -5,7 +5,7 @@ class TestShape(unittest.TestCase):
 
     def test_calculate_area_circle(self):
         # Test for a circle with radius 5
-        result = Circle('circle', radius=5).calculate_area
+        result = Circle(radius=5).calculate_area
         self.assertAlmostEqual(result, 78.5, places=2)
 
     def test_calculate_area_rectangle(self):
