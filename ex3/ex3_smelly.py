@@ -6,7 +6,7 @@ class Product:
         self.tax_rate = tax_rate
 
     def apply_discount(self):
-        discounted_price = self.price - (1 * self.discount_rate)
+        discounted_price = self.price * (1 - self.discount_rate)
         print(f"Discounted price for {self.name} (Grocery): {discounted_price}")
         return discounted_price
     
